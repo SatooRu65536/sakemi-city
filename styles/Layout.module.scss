@@ -1,0 +1,162 @@
+.header {
+    padding: 26px;
+    text-align: center;
+
+    .header_container {
+        width: fit-content;
+        margin: 0 auto;
+        display: flex;
+
+        .site_setting {
+            padding: 1.6rem 0 0 50px;
+            display: flex;
+
+            .color_wrap {
+                line-height: 1.6rem;
+
+                .color_button {
+                    width: 30px;
+                    height: 30px;
+                    margin: auto 5px;
+                    display: inline-block;
+                    border-radius: 5px;
+                    border: 2px solid #A6DCEF;
+                    transition: all 0.5s;
+                }
+
+                .color_button:nth-child(2) {
+                    color: white;
+                    background-color: black;
+                }
+
+                .color_button:nth-child(3) {
+                    color: black;
+                    background-color: white;
+                }
+
+                .color_button:nth-child(4) {
+                    color: white;
+                    background-color: dimgray;
+                }
+
+                .color_button:hover {
+                    border-color: #6886C5;
+                }
+            }
+
+            .fontsize_wrap {
+                line-height: 1.8rem;
+
+                .size_button {
+                    width: 30px;
+                    height: 30px;
+                    margin: auto 5px;
+                    display: inline-block;
+                    background-color: #DDF3F5;
+                    border-radius: 5px;
+                    transition: all 0.5s;
+                }
+
+                .size_button:hover {
+                    background-color: #A6DCEF;
+                }
+            }
+
+            .search_wrap {
+                height: 36px;
+                margin-top: -3px;
+                padding: 0 10px;
+                background-color: var(--color-bg-2);
+                border-radius: 5px;
+
+                .serch_forn {
+                    height: 36px;
+                    line-height: 36px;
+                    vertical-align: middle;
+
+                    .serch_icon {
+                        margin-top: -2px;
+                        vertical-align: middle;
+                    }
+
+                    .search_box {
+                        width: 150px;
+                        height: 30px;
+                        margin-top: 4px;
+                        font-size: 1.1rem;
+                        background-color: transparent;
+                        padding: 1px 2px;
+                        border: none;
+                    }
+
+                    .search_box:focus {
+                        border: none;
+                        outline: none;
+                    }
+
+                    .search_box:focus-visible {
+                        border: none;
+                        outline: none;
+                    }
+
+                    .search_submit {
+                        height: 32px;
+                        width: 50px;
+                        margin-top: 2px;
+                        vertical-align: top;
+                        color: var(--color-bg-1);
+                        background-color: var(--color-primary);
+                        border: none;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    padding: 20px 40px 15px 40px;
+    background-color: #A6DCEF;
+
+    .detail_wrap {
+        display: grid;
+        grid-template-columns: 1fr 0.8fr;
+
+        .detail_container {
+
+            .cityhall_name {
+                margin-left: 15px;
+                font-weight: bold;
+                font-size: 1.1rem;
+            }
+
+            .cityhall_details {
+                padding-left: 30px;
+            }
+
+            .detail_list {
+                list-style: none;
+                margin-bottom: 10px;
+
+                .detail_btn {
+                    padding: 5px 15px;
+                    font-size: 0.9rem;
+                    background-color: var(--color-bg-1);
+                    border-radius: 7px;
+                    transition: all 0.5s;
+                }
+
+                .detail_btn:hover {
+                    background-color: var(--color-bg-2);
+                }
+            }
+        }
+    }
+
+    .copyright {
+        margin-top: 20px;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
