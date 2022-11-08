@@ -2,7 +2,7 @@ import Image from 'next/image';
 import styles from '../styles/components/footer.module.scss';
 
 
-export default () => {
+const footer = () => {
     return (
         <footer className={styles.footer}>
             <div>
@@ -49,3 +49,6 @@ export default () => {
         </footer>
     )
 }
+
+
+export default footer;

@@ -3,7 +3,7 @@ import styles from '../styles/components/header.module.scss';
 import SearchIcon from '@mui/icons-material/Search';
 
 
-export default () => {
+const Header = () => {
     return (
         <header className={styles.header}>
             <div className={styles.header_container}>
@@ -40,3 +40,6 @@ export default () => {
         </header>
     )
 }
+
+
+export default Header;
