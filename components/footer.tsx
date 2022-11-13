@@ -6,7 +6,7 @@ const footer = () => {
     return (
         <footer className={styles.footer}>
             <div>
-                <Image src="/logo.svg" alt="Logo" width={150} height={50} />
+                <Image src="/logo.svg" alt="city logo" width={150} height={50} />
 
                 <div className={styles.detail_wrap}>
                     <div className={styles.detail_container}>
