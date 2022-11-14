@@ -5,32 +5,15 @@ import SearchIcon from '@mui/icons-material/Search';
 
 
 const switch_color = (n: number) => {
-    const logos = [...document.getElementsByClassName('city-logo')];
+    const not_filters = [...document.getElementsByClassName('not_filer')];
 
     switch (n) {
         case 0:
-            document.documentElement.style.setProperty('--color-font-1', '#000000');
-            document.documentElement.style.setProperty('--color-font-2', '#ffffff');
-            document.documentElement.style.setProperty('--color-bg-1', '#F9F9F9');
-            document.documentElement.style.setProperty('--color-bg-2', '#DDF3F5');
-            document.documentElement.style.setProperty('--color-bg-2-dark', '#A6DCEF');
-            // document.documentElement.style.setProperty('--color-primary', '#');
-            // document.documentElement.style.setProperty('--color-secound', '#');
-            // document.documentElement.style.setProperty('--color-secound-thin', '#');
-            // document.documentElement.style.setProperty('--color-accent-1', '#');
-            // document.documentElement.style.setProperty('--color-accent-2', '#');
-
-            logos.forEach(logo => logo.getAttribute('src', 'logo-reverse.svg'));
+            not_filters.map(nf => nf.style.filter = 'filter: invert(1) hue-rotate(180deg)');
+            document.getElementsByTagName('html')[0].style.filter = 'invert(1) hue-rotate(180deg)';
             break;
         case 1:
-            document.documentElement.style.setProperty('--color-font-1', '#ffffff');
-            document.documentElement.style.setProperty('--color-font-2', '#000000');
-            document.documentElement.style.setProperty('--color-bg-1', '#000000');
-            document.documentElement.style.setProperty('--color-bg-2', '#111111');
-            document.documentElement.style.setProperty('--color-bg-2-dark', '#393e46');
-            break;
-        case 2:
-            document.documentElement.style.setProperty('--color-font-1', '#ffffff');
+            document.getElementsByTagName('html')[0].style.filter = '';
             break;
     }
 }
@@ -80,7 +63,7 @@ const Header = () => {
 
                 <div className={styles.header_container}>
                     <Link href={'/'}>
-                        <Image className='city-logo' src="/logo.svg" alt="Logo" width={250} height={80} />
+                        <Image src="/logo.svg" alt="Logo" width={250} height={80} />
                     </Link>
 
                     <div className={styles.site_setting}>
@@ -88,7 +71,6 @@ const Header = () => {
                             <span>表示色</span>
                             <span onClick={() => switch_color(0)} className={styles.color_button}>白</span>
                             <span onClick={() => switch_color(1)} id='switch_color_black' className={styles.color_button}>黒</span>
-                            <span onClick={() => switch_color(2)} id='switch_color_gray' className={styles.color_button}>灰</span>
                         </div>
 
                         <div className={styles.fontsize_wrap}>

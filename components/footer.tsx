@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from '../styles/components/footer.module.scss';
 
 
@@ -6,7 +7,9 @@ const footer = () => {
     return (
         <footer className={styles.footer}>
             <div>
-                <Image src="/logo.svg" alt="city logo" width={150} height={50} />
+                <Link href={'/'}>
+                    <Image src="/logo.svg" alt="city logo" width={150} height={50} />
+                </Link>
 
                 <div className={styles.detail_wrap}>
                     <div className={styles.detail_container}>
@@ -25,19 +28,29 @@ const footer = () => {
                     <div className={styles.detail_container}>
                         <ul>
                             <li className={styles.detail_list}>
-                                <span className={styles.detail_btn}>市役所へのアクセス</span>
+                                <Link href={'/unproduced'}>
+                                    <span className={styles.detail_btn}>市役所へのアクセス</span>
+                                </Link>
                             </li>
                             <li className={styles.detail_list}>
-                                <span className={styles.detail_btn}>各課のご案内</span>
+                                <Link href={'/unproduced'}>
+                                    <span className={styles.detail_btn}>各課のご案内</span>
+                                </Link>
                             </li>
                             <li className={styles.detail_list}>
-                                <span className={styles.detail_btn}>フロアマップ</span>
+                                <Link href={'/unproduced'}>
+                                    <span className={styles.detail_btn}>フロアマップ</span>
+                                </Link>
                             </li>
                             <li className={styles.detail_list}>
-                                <span className={styles.detail_btn}>市へのご意見・お問い合わせ</span>
+                                <Link href={'/unproduced'}>
+                                    <span className={styles.detail_btn}>市へのご意見・お問い合わせ</span>
+                                </Link>
                             </li>
                             <li className={styles.detail_list}>
-                                <span className={styles.detail_btn}>サイトマップ</span>
+                                <Link href={'/unproduced'}>
+                                    <span className={styles.detail_btn}>サイトマップ</span>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -46,7 +59,7 @@ const footer = () => {
             </div>
 
             <p className={styles.copyright}>Copyright © Sakemi city All right reserved.</p>
-        </footer>
+        </footer >
     )
 }
 

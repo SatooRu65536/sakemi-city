@@ -20,13 +20,13 @@
         display: inline-block;
         position: absolute;
         top: 13px;
-        left: 20px;
+        left: 10px;
 
         span {
             width: 100%;
             height: 3px;
             background-color: var(--color-bg-1);
-            border-radius: 999px;
+            border-radius: 1.5px;
             display: inline-block;
             position: absolute;
             transition: all 0.5s;
@@ -62,26 +62,29 @@
             li {
                 margin-bottom: 0.3rem;
                 font-family: 'Kosugi Maru', sans-serif;
-                color: var(--color-font-2);
                 font-size: 1.3rem;
                 transition: all 0.5s;
+
+                a {
+                    color: var(--color-font-2);
+                }
             }
         }
     }
 
-    .hamburger_cbx:checked ~ .hamburger_wrap span:nth-child(1) {
+    .hamburger_cbx:checked~.hamburger_wrap span:nth-child(1) {
         transform: translateY(10px) rotate(45deg);
     }
 
-    .hamburger_cbx:checked ~ .hamburger_wrap span:nth-child(2) {
+    .hamburger_cbx:checked~.hamburger_wrap span:nth-child(2) {
         opacity: 0;
     }
 
-    .hamburger_cbx:checked ~ .hamburger_wrap span:nth-child(3) {
+    .hamburger_cbx:checked~.hamburger_wrap span:nth-child(3) {
         transform: translateY(-10px) rotate(-45deg);
     }
 
-    .hamburger_cbx:checked ~ .drawer {
+    .hamburger_cbx:checked~.drawer {
         height: 15.5rem;
 
         ul {
@@ -116,6 +119,10 @@
 
                 .color_wrap {
                     line-height: 25px;
+
+                    span {
+                        color: var(--color-font-1);
+                    }
 
                     .color_button {
                         width: 30px;
@@ -153,6 +160,7 @@
 
                     .size_title {
                         margin-left: 15px;
+                        color: var(--color-font-1);
                     }
 
                     .size_button {
@@ -271,7 +279,7 @@
         span:nth-child(n+2)::before {
             content: '';
             height: 30px;
-            border-right: dotted 2px;
+            border-right: dotted 2px var(--color-font-1);
             position: absolute;
             left: 0;
             top: 5px;
