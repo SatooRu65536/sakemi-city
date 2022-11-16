@@ -5,11 +5,11 @@ import SearchIcon from '@mui/icons-material/Search';
 
 
 const switch_color = (n: number) => {
-    const not_filters = [...document.getElementsByClassName('not_filer')];
+    const not_filters = [...document.getElementsByClassName('not_filer')] as HTMLElement[];
 
     switch (n) {
         case 0:
-            not_filters.map(nf => nf.style.filter = 'filter: invert(1) hue-rotate(180deg)');
+            not_filters.forEach(nf => nf.style.filter = 'filter: invert(1) hue-rotate(180deg)');
             document.getElementsByTagName('html')[0].style.filter = 'invert(1) hue-rotate(180deg)';
             break;
         case 1:
