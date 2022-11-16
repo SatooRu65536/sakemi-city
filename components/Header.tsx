@@ -5,15 +5,35 @@ import SearchIcon from '@mui/icons-material/Search';
 
 
 const switch_color = (n: number) => {
-    const not_filters = [...document.getElementsByClassName('not_filer')] as HTMLElement[];
-
+    const top_logo = document.getElementById('top-logo') as HTMLElement;
     switch (n) {
         case 0:
-            not_filters.forEach(nf => nf.style.filter = 'filter: invert(1) hue-rotate(180deg)');
-            document.getElementsByTagName('html')[0].style.filter = 'invert(1) hue-rotate(180deg)';
+            document.documentElement.style.setProperty('--color-font-1', '#ffffff');
+            document.documentElement.style.setProperty('--color-font-2', '#000000');
+            document.documentElement.style.setProperty('--color-font-3', '#000000');
+            // document.documentElement.style.setProperty('--color-primary', '#6886C5');
+            // document.documentElement.style.setProperty('--color-secound', '#E36387');
+            // document.documentElement.style.setProperty('--color-secound-thin', '#F2AAAA');
+            document.documentElement.style.setProperty('--color-accent-1', '#ffffff');
+            document.documentElement.style.setProperty('--color-accent-2', '#ffffff');
+            document.documentElement.style.setProperty('--color-bg-1', '#060606');
+            document.documentElement.style.setProperty('--color-bg-2', '#DDF3F5');
+            document.documentElement.style.setProperty('--color-bg-2-dark', '#A6DCEF');
+            top_logo.setAttribute('srcset', '/logo-reverse.svg');
             break;
         case 1:
-            document.getElementsByTagName('html')[0].style.filter = '';
+            document.documentElement.style.setProperty('--color-font-1', '#000000');
+            document.documentElement.style.setProperty('--color-font-2', '#ffffff');
+            document.documentElement.style.setProperty('--color-font-3', '#000000');
+            // document.documentElement.style.setProperty('--color-primary', '#6886C5');
+            // document.documentElement.style.setProperty('--color-secound', '#E36387');
+            // document.documentElement.style.setProperty('--color-secound-thin', '#F2AAAA');
+            document.documentElement.style.setProperty('--color-accent-1', '#FFACB7');
+            document.documentElement.style.setProperty('--color-accent-2', '#FFE0AC');
+            document.documentElement.style.setProperty('--color-bg-1', '#F9F9F9');
+            document.documentElement.style.setProperty('--color-bg-2', '#DDF3F5');
+            document.documentElement.style.setProperty('--color-bg-2-dark', '#A6DCEF');
+            top_logo.setAttribute('srcset', '/logo.svg');
             break;
     }
 }
@@ -63,7 +83,7 @@ const Header = () => {
 
                 <div className={styles.header_container}>
                     <Link href={'/'}>
-                        <Image src="/logo.svg" alt="Logo" width={250} height={80} />
+                        <Image src="/logo.svg" id='top-logo' alt="Logo" width={250} height={80} />
                     </Link>
 
                     <div className={styles.site_setting}>

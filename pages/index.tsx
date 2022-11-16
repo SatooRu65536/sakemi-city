@@ -41,7 +41,7 @@ export default function Home() {
               <SwiperSlide key={index}>
                 <Link href={banner.link}>
                   <Image
-                  className='not_filter'
+                    className='not-filer'
                     src={banner.path}
                     layout="responsive"
                     width={600}

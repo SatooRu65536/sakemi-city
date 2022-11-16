@@ -30,6 +30,10 @@
     border: 5px solid var(--color-bg-2-dark);
     border-radius: 15px;
     transition: all 0.5s;
+
+    span {
+      color: var(--color-font-1);
+    }
   }
 
   .life_box:hover {
