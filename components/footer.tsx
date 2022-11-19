@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from '../styles/components/footer.module.scss';
 
 
-const footer = () => {
+export default  () => {
     return (
         <footer className={styles.footer}>
             <div>
@@ -62,6 +62,3 @@ const footer = () => {
         </footer >
     )
 }
-
-
-export default footer;

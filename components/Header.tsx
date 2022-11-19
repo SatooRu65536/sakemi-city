@@ -4,40 +4,6 @@ import styles from '../styles/components/header.module.scss';
 import SearchIcon from '@mui/icons-material/Search';
 
 
-const switch_color = (n: number) => {
-    const top_logo = document.getElementById('top-logo') as HTMLElement;
-    switch (n) {
-        case 0:
-            document.documentElement.style.setProperty('--color-font-1', '#ffffff');
-            document.documentElement.style.setProperty('--color-font-2', '#000000');
-            document.documentElement.style.setProperty('--color-font-3', '#000000');
-            // document.documentElement.style.setProperty('--color-primary', '#6886C5');
-            // document.documentElement.style.setProperty('--color-secound', '#E36387');
-            // document.documentElement.style.setProperty('--color-secound-thin', '#F2AAAA');
-            document.documentElement.style.setProperty('--color-accent-1', '#ffffff');
-            document.documentElement.style.setProperty('--color-accent-2', '#ffffff');
-            document.documentElement.style.setProperty('--color-bg-1', '#060606');
-            document.documentElement.style.setProperty('--color-bg-2', '#DDF3F5');
-            document.documentElement.style.setProperty('--color-bg-2-dark', '#A6DCEF');
-            top_logo.setAttribute('srcset', '/logo-reverse.svg');
-            break;
-        case 1:
-            document.documentElement.style.setProperty('--color-font-1', '#000000');
-            document.documentElement.style.setProperty('--color-font-2', '#ffffff');
-            document.documentElement.style.setProperty('--color-font-3', '#000000');
-            // document.documentElement.style.setProperty('--color-primary', '#6886C5');
-            // document.documentElement.style.setProperty('--color-secound', '#E36387');
-            // document.documentElement.style.setProperty('--color-secound-thin', '#F2AAAA');
-            document.documentElement.style.setProperty('--color-accent-1', '#FFACB7');
-            document.documentElement.style.setProperty('--color-accent-2', '#FFE0AC');
-            document.documentElement.style.setProperty('--color-bg-1', '#F9F9F9');
-            document.documentElement.style.setProperty('--color-bg-2', '#DDF3F5');
-            document.documentElement.style.setProperty('--color-bg-2-dark', '#A6DCEF');
-            top_logo.setAttribute('srcset', '/logo.svg');
-            break;
-    }
-}
-
 const switch_fontsize = (n: number) => {
     switch (n) {
         case 0:
@@ -52,8 +18,12 @@ const switch_fontsize = (n: number) => {
     }
 }
 
+const setTheme = (newTheme: 'light'|'dark') => {
+    document.documentElement.setAttribute('data-theme', newTheme);
+}
 
-const Header = () => {
+
+export default () => {
     return (
         <div>
             <div className={styles.top_menu_wrap}>
@@ -83,14 +53,14 @@ const Header = () => {
 
                 <div className={styles.header_container}>
                     <Link href={'/'}>
-                        <Image src="/logo.svg" id='top-logo' alt="Logo" width={250} height={80} />
+                        <Image className='reverse' src="/logo.svg" alt="Logo" width={250} height={80} />
                     </Link>
 
                     <div className={styles.site_setting}>
                         <div className={styles.color_wrap}>
                             <span>表示色</span>
-                            <span onClick={() => switch_color(0)} className={styles.color_button}>白</span>
-                            <span onClick={() => switch_color(1)} id='switch_color_black' className={styles.color_button}>黒</span>
+                            <span onClick={() => setTheme('dark')} className={styles.color_button}>白</span>
+                            <span onClick={() => setTheme('light')} id='switch_color_black' className={styles.color_button}>黒</span>
                         </div>
 
                         <div className={styles.fontsize_wrap}>
@@ -127,6 +97,3 @@ const Header = () => {
         </div>
     )
 }
-
-
-export default Header;

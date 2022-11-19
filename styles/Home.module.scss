@@ -30,9 +30,22 @@
     border: 5px solid var(--color-bg-2-dark);
     border-radius: 15px;
     transition: all 0.5s;
+    text-align: center;
+    position: relative;
+
+    .life_icon {
+      margin-top: 10px;
+      font-size: 50px;
+      color: var(--color-primary);
+    }
 
     span {
+      width: 100%;
       color: var(--color-font-1);
+      font-size: 0.9rem;
+      position: absolute;
+      bottom: 10px;
+      left: 0;
     }
   }
 

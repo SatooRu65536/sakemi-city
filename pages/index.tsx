@@ -5,6 +5,18 @@ import Layout from '../components/Layout';
 import styles from '../styles/Home.module.scss';
 import SwiperCore, { Pagination, Navigation, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import HomeIcon from '@mui/icons-material/Home';
+import Pregnantwoman from '@mui/icons-material/PregnantWoman';
+import School from '@mui/icons-material/School';
+import Delete from '@mui/icons-material/Delete';
+import Payments from '@mui/icons-material/Payments';
+import Wheelchairpickup from '@mui/icons-material/Wheelchairpickup';
+import Flood from '@mui/icons-material/Flood';
+import Work from '@mui/icons-material/Work';
+import Group from '@mui/icons-material/Group';
+import Localhospital from '@mui/icons-material/Localhospital';
+import Directionsboat from '@mui/icons-material/Directionsboat';
+import Person from '@mui/icons-material/Person';
 
 
 SwiperCore.use([Pagination, Navigation, Autoplay]);
@@ -55,41 +67,89 @@ export default function Home() {
         </Swiper>
 
         <div className={styles.life_serch}>
-          <div className={styles.life_box}>
-            <span>引越し</span>
-          </div>
-          <div className={styles.life_box}>
-            <span>妊娠・出産</span>
-          </div>
-          <div className={styles.life_box}>
-            <span>子育て・教育</span>
-          </div>
-          <div className={styles.life_box}>
-            <span>資源・ごみ</span>
-          </div>
-          <div className={styles.life_box}>
-            <span>税金・保険料</span>
-          </div>
-          <div className={styles.life_box}>
-            <span>介護・福祉</span>
-          </div>
-          <div className={styles.life_box}>
-            <span>防災・防犯</span>
-          </div>
-          <div className={styles.life_box}>
-            <span>就労</span>
-          </div>
-          <div className={styles.life_box}>
-            <span>結婚・離婚</span>
-          </div>
-          <div className={styles.life_box}>
-            <span>葬儀</span></div>
-          <div className={styles.life_box}>
-            <span>医療・保健</span>
-          </div>
-          <div className={styles.life_box}>
-            <span>渡船・交通</span>
-          </div>
+          <Link href='/unproduced'>
+            <div className={styles.life_box}>
+              <HomeIcon className={styles.life_icon} />
+              <span>引越し</span>
+            </div>
+          </Link>
+
+          <Link href='/unproduced'>
+            <div className={styles.life_box}>
+              <Pregnantwoman className={styles.life_icon} />
+              <span>妊娠・出産</span>
+            </div>
+          </Link>
+
+          <Link href='/unproduced'>
+            <div className={styles.life_box}>
+              <School className={styles.life_icon} />
+              <span>子育て・教育</span>
+            </div>
+          </Link>
+
+          <Link href='/unproduced'>
+            <div className={styles.life_box}>
+              <Delete className={styles.life_icon} />
+              <span>資源・ごみ</span>
+            </div>
+          </Link>
+
+          <Link href='/unproduced'>
+            <div className={styles.life_box}>
+              <Payments className={styles.life_icon} />
+              <span>税金・保険料</span>
+            </div>
+          </Link>
+
+          <Link href='/unproduced'>
+            <div className={styles.life_box}>
+              <Wheelchairpickup className={styles.life_icon} />
+              <span>介護・福祉</span>
+            </div>
+          </Link>
+
+          <Link href='/unproduced'>
+            <div className={styles.life_box}>
+              <Flood className={styles.life_icon} />
+              <span>防災・防犯</span>
+            </div>
+          </Link>
+
+          <Link href='/unproduced'>
+            <div className={styles.life_box}>
+              <Work className={styles.life_icon} />
+              <span>就労</span>
+            </div>
+          </Link>
+
+          <Link href='/unproduced'>
+            <div className={styles.life_box}>
+              <Group className={styles.life_icon} />
+              <span>結婚・離婚</span>
+            </div>
+          </Link>
+
+          <Link href='/unproduced'>
+            <div className={styles.life_box}>
+              <Person className={styles.life_icon} />
+              <span>葬儀</span>
+            </div>
+          </Link>
+
+          <Link href='/unproduced'>
+            <div className={styles.life_box}>
+              <Localhospital className={styles.life_icon} />
+              <span>医療・保健</span>
+            </div>
+          </Link>
+
+          <Link href='/unproduced'>
+            <div className={styles.life_box}>
+              <Directionsboat className={styles.life_icon} />
+              <span>渡船・交通</span>
+            </div>
+          </Link>
         </div>
       </main>
     </Layout>
