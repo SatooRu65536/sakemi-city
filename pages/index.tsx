@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -21,7 +22,10 @@ import Person from '@mui/icons-material/Person';
 
 SwiperCore.use([Pagination, Navigation, Autoplay]);
 
+
 export default function Home() {
+  const [selectTab, setSelectTab] = useState(0);
+
   const banners = [
     { path: '/banner/banner-1.jpeg', link: '/unproduced' },
     { path: '/banner/banner-2.jpeg', link: '/unproduced' },
@@ -150,6 +154,39 @@ export default function Home() {
               <span>渡船・交通</span>
             </div>
           </Link>
+        </div>
+
+        <div className={styles.news_container}>
+          <ul className={styles.tabs}>
+            <li
+              className={selectTab == 0 ? styles.active: ''}
+              onClick={() => setSelectTab(0)}
+            >お知らせ</li>
+            <li
+              className={selectTab == 1 ? styles.active: ''}
+              onClick={() => setSelectTab(1)}
+            >災害情報</li>
+          </ul>
+
+          <div className={styles.contents}>
+            <div className={`${styles.news_section} ${selectTab == 0 ? styles.active: ''}`}>
+              <ul className={styles.content_list}>
+                <li>お知らせ1-1</li>
+                <li>お知らせ1-2</li>
+                <li>お知らせ1-3</li>
+                <li>お知らせ1-4</li>
+              </ul>
+            </div>
+            
+            <div className={`${styles.news_section} ${selectTab == 1 ? styles.active: ''}`}>
+              <ul className={styles.content_list}>
+                <li>お知らせ2-1</li>
+                <li>お知らせ2-2</li>
+                <li>お知らせ2-3</li>
+                <li>お知らせ2-4</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </main>
     </Layout>

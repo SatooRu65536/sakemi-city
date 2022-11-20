@@ -77,26 +77,30 @@
         }
     }
 
-    .hamburger_cbx:checked~.hamburger_wrap span:nth-child(1) {
-        transform: translateY(10px) rotate(45deg);
-    }
+    .hamburger_cbx:checked {
+        ~.hamburger_wrap span {
+            &:nth-child(1) {
+                transform: translateY(10px) rotate(45deg);
+            }
 
-    .hamburger_cbx:checked~.hamburger_wrap span:nth-child(2) {
-        opacity: 0;
-    }
+            &:nth-child(2) {
+                opacity: 0;
+            }
 
-    .hamburger_cbx:checked~.hamburger_wrap span:nth-child(3) {
-        transform: translateY(-10px) rotate(-45deg);
-    }
+            &:nth-child(3) {
+                transform: translateY(-10px) rotate(-45deg);
+            }
+        }
 
-    .hamburger_cbx:checked~.drawer {
-        height: 15.5rem;
-
-        ul {
-            padding-top: 5px;
-
-            li {
-                margin-bottom: 0.5rem;
+        ~.drawer {
+            height: 15.5rem;
+    
+            ul {
+                padding-top: 5px;
+    
+                li {
+                    margin-bottom: 0.5rem;
+                }
             }
         }
     }
