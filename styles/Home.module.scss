@@ -59,6 +59,10 @@
 .news_container {
   margin: 40px 60px;
 
+  @media (max-width: 900px) {
+    margin: 40px 10px;
+  }
+
   .tabs {
     display: flex;
 
@@ -77,13 +81,15 @@
       &.active {
         background-color: var(--color-bg-2-dark);
       }
+
+
     }
   }
 
   .contents {
     min-height: 100px;
     margin-top: -4px;
-    background-color: var(--color-bg-2-dark);
+    border: 15px solid var(--color-bg-2-dark);
     border-radius: 0px 10px 10px 10px;
 
     .news_section {
@@ -99,7 +105,27 @@
         list-style: none;
 
         li {
-          margin-top: 7px;
+          margin-top: 17px;
+          position: relative;
+
+          &::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: var(--color-bg-2-dark);
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+          }
+
+          .date {
+            font-size: 0.85rem;
+            padding-right: 15px;
+
+            @media (max-width: 900px) {
+              display: block;
+            }
+          }
         }
       }
     }

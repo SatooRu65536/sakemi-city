@@ -159,31 +159,63 @@ export default function Home() {
         <div className={styles.news_container}>
           <ul className={styles.tabs}>
             <li
-              className={selectTab == 0 ? styles.active: ''}
+              className={selectTab == 0 ? styles.active : ''}
               onClick={() => setSelectTab(0)}
             >お知らせ</li>
             <li
-              className={selectTab == 1 ? styles.active: ''}
+              className={selectTab == 1 ? styles.active : ''}
               onClick={() => setSelectTab(1)}
             >災害情報</li>
           </ul>
 
           <div className={styles.contents}>
-            <div className={`${styles.news_section} ${selectTab == 0 ? styles.active: ''}`}>
+            <div className={`${styles.news_section} ${selectTab == 0 ? styles.active : ''}`}>
               <ul className={styles.content_list}>
-                <li>お知らせ1-1</li>
-                <li>お知らせ1-2</li>
-                <li>お知らせ1-3</li>
-                <li>お知らせ1-4</li>
+                <li>
+                <span className={styles.date}>2022年11月21日</span>
+                  <a href="/unproduced">酒見市酒浴びフェスティバル 2022 開催のお知らせ</a>
+                </li>
+                <li>
+                <span className={styles.date}>2021年11月21日</span>
+                  <a href="/unproduced">酒見市酒浴びフェスティバル 2021 開催のお知らせ</a>
+                </li>
+                <li>
+                <span className={styles.date}>2020年11月21日</span>
+                  <a href="/unproduced">酒見市酒浴びフェスティバル 2020 開催のお知らせ</a>
+                </li>
+                <li>
+                <span className={styles.date}>2019年11月21日</span>
+                  <a href="/unproduced">酒見市酒浴びフェスティバル 2019 開催のお知らせ</a>
+                </li>
+                <li>
+                <span className={styles.date}>2018年11月21日</span>
+                  <a href="/unproduced">酒見市酒浴びフェスティバル 2018 開催のお知らせ</a>
+                </li>
+                <li>
+                <span className={styles.date}>2017年11月21日</span>
+                  <a href="/unproduced">酒見市酒浴びフェスティバル 2017 開催のお知らせ</a>
+                </li>
               </ul>
             </div>
-            
-            <div className={`${styles.news_section} ${selectTab == 1 ? styles.active: ''}`}>
+
+            <div className={`${styles.news_section} ${selectTab == 1 ? styles.active : ''}`}>
               <ul className={styles.content_list}>
-                <li>お知らせ2-1</li>
-                <li>お知らせ2-2</li>
-                <li>お知らせ2-3</li>
-                <li>お知らせ2-4</li>
+                <li>
+                  <span className={styles.date}>2022年11月21日</span>
+                  <a href="/unproduced">[地震情報] M1.1 2022年11月21日 1時31分22秒</a>
+                </li>
+                <li>
+                  <span className={styles.date}>2022年11月21日</span>
+                  <a href="/unproduced">お知らせ2-1</a>
+                </li>
+                <li>
+                  <span className={styles.date}>2022年11月21日</span>
+                  <a href="/unproduced">お知らせ2-1</a>
+                </li>
+                <li>
+                  <span className={styles.date}>2022年11月21日</span>
+                  <a href="/unproduced">お知らせ2-1</a>
+                </li>
               </ul>
             </div>
           </div>
