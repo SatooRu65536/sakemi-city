@@ -23,7 +23,7 @@ const setTheme = (newTheme: 'light'|'dark') => {
 }
 
 
-export default () => {
+const header = () => {
     return (
         <div>
             <div className={styles.top_menu_wrap}>
@@ -97,3 +97,5 @@ export default () => {
         </div>
     )
 }
+
+export default header;
