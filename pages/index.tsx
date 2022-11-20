@@ -173,27 +173,27 @@ export default function Home() {
               <ul className={styles.content_list}>
                 <li>
                 <span className={styles.date}>2022年11月21日</span>
-                  <a href="/unproduced">酒見市酒浴びフェスティバル 2022 開催のお知らせ</a>
+                  <Link href="/unproduced">酒見市酒浴びフェスティバル 2022 開催のお知らせ</Link>
                 </li>
                 <li>
                 <span className={styles.date}>2021年11月21日</span>
-                  <a href="/unproduced">酒見市酒浴びフェスティバル 2021 開催のお知らせ</a>
+                  <Link href="/unproduced">酒見市酒浴びフェスティバル 2021 開催のお知らせ</Link>
                 </li>
                 <li>
                 <span className={styles.date}>2020年11月21日</span>
-                  <a href="/unproduced">酒見市酒浴びフェスティバル 2020 開催のお知らせ</a>
+                  <Link href="/unproduced">酒見市酒浴びフェスティバル 2020 開催のお知らせ</Link>
                 </li>
                 <li>
                 <span className={styles.date}>2019年11月21日</span>
-                  <a href="/unproduced">酒見市酒浴びフェスティバル 2019 開催のお知らせ</a>
+                  <Link href="/unproduced">酒見市酒浴びフェスティバル 2019 開催のお知らせ</Link>
                 </li>
                 <li>
                 <span className={styles.date}>2018年11月21日</span>
-                  <a href="/unproduced">酒見市酒浴びフェスティバル 2018 開催のお知らせ</a>
+                  <Link href="/unproduced">酒見市酒浴びフェスティバル 2018 開催のお知らせ</Link>
                 </li>
                 <li>
                 <span className={styles.date}>2017年11月21日</span>
-                  <a href="/unproduced">酒見市酒浴びフェスティバル 2017 開催のお知らせ</a>
+                  <Link href="/unproduced">酒見市酒浴びフェスティバル 2017 開催のお知らせ</Link>
                 </li>
               </ul>
             </div>
@@ -202,19 +202,19 @@ export default function Home() {
               <ul className={styles.content_list}>
                 <li>
                   <span className={styles.date}>2022年11月21日</span>
-                  <a href="/unproduced">[地震情報] M1.1 2022年11月21日 1時31分22秒</a>
+                  <Link href="/unproduced">[地震情報] M1.1 2022年11月21日 1時31分22秒</Link>
                 </li>
                 <li>
                   <span className={styles.date}>2022年11月21日</span>
-                  <a href="/unproduced">お知らせ2-1</a>
+                  <Link href="/unproduced">お知らせ2-1</Link>
                 </li>
                 <li>
                   <span className={styles.date}>2022年11月21日</span>
-                  <a href="/unproduced">お知らせ2-1</a>
+                  <Link href="/unproduced">お知らせ2-1</Link>
                 </li>
                 <li>
                   <span className={styles.date}>2022年11月21日</span>
-                  <a href="/unproduced">お知らせ2-1</a>
+                  <Link href="/unproduced">お知らせ2-1</Link>
                 </li>
               </ul>
             </div>
