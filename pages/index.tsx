@@ -11,7 +11,7 @@ import Pregnantwoman from '@mui/icons-material/PregnantWoman';
 import School from '@mui/icons-material/School';
 import Delete from '@mui/icons-material/Delete';
 import Payments from '@mui/icons-material/Payments';
-import Wheelchairpickup from '@mui/icons-material/Wheelchairpickup';
+import WheelchairPickup from '@mui/icons-material/WheelchairPickup';
 import Flood from '@mui/icons-material/Flood';
 import Work from '@mui/icons-material/Work';
 import Group from '@mui/icons-material/Group';
