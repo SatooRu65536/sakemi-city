@@ -15,8 +15,8 @@ import Wheelchairpickup from '@mui/icons-material/WheelchairPickup';
 import Flood from '@mui/icons-material/Flood';
 import Work from '@mui/icons-material/Work';
 import Group from '@mui/icons-material/Group';
-import Localhospital from '@mui/icons-material/Localhospital';
-import Directionsboat from '@mui/icons-material/Directionsboat';
+import Localhospital from '@mui/icons-material/LocalHospital';
+import Directionsboat from '@mui/icons-material/DirectionsBoat';
 import Person from '@mui/icons-material/Person';
 
 
