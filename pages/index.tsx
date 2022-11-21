@@ -46,6 +46,7 @@ export default function Home() {
         <Swiper
           className={styles.swiper}
           slidesPerView={1}
+          spaceBetween={30}
           pagination={{
             clickable: true,
           }}

@@ -21,16 +21,18 @@
         }
 
         .detail_container {
+            margin-left: 15px;
+            @media (max-width: 600px) {
+                margin-left: 0;
+            }
 
             .cityhall_name {
-                margin-left: 15px;
                 font-weight: bold;
                 font-size: 1.1rem;
                 color: var(--color-font-3);
             }
 
             .cityhall_details {
-                padding-left: 20px;
 
                 p {
                     color: var(--color-font-3);
