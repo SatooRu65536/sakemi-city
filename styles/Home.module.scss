@@ -33,7 +33,7 @@
     margin: 20px auto;
     text-align: center;
     background-color: var(--color-bg-1);
-    border: 0px solid var(--color-bg-2-dark);
+    border: 0px solid var(--color-primary);
     border-radius: 15px;
     transition: all 0.5s;
     text-align: center;
@@ -124,8 +124,10 @@
           }
 
           .date {
+            width: 7.5rem;
             font-size: 0.85rem;
             padding-right: 15px;
+            display: inline-block;
 
             @media (max-width: 900px) {
               display: block;
@@ -134,5 +136,38 @@
         }
       }
     }
+
+    .more_info {
+      margin: 30px 10px 0px 10px;
+      display: block;
+      text-align: center;
+      border: 2px;
+
+      .link {
+        padding: 10px 20px;
+        color: var(--color-font-2);
+        background-color: var(--color-primary);
+        border-radius: 5px;
+        transition: all 0.5s;
+        
+        &:hover {
+          color: var(--color-font-2);
+          background-color: var(--color-primary-thin);
+        }
+      }
+    }
+  }
+}
+
+.banner_conteiner {
+  margin: 30px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  
+  .banner {
+    width: 200px;
+    padding: 0 10px;
+    display: block;
+    list-style: none;
   }
 }

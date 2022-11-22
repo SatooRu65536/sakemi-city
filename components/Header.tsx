@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Link from 'next/link';
 import styles from '../styles/components/header.module.scss';
 import SearchIcon from '@mui/icons-material/Search';
@@ -38,13 +38,13 @@ const header = () => {
                 <div className={styles.drawer}>
                     <ul>
                         <li><Link href={'/'}>トップ</Link></li>
-                        <li><Link href={'/unproduced'}>暮らし情報</Link></li>
-                        <li><Link href={'/unproduced'}>子育て・教育</Link></li>
-                        <li><Link href={'/unproduced'}>健康・福祉</Link></li>
-                        <li><Link href={'/unproduced'}>観光情報</Link></li>
-                        <li><Link href={'/unproduced'}>文化・歴史</Link></li>
-                        <li><Link href={'/unproduced'}>産業・農業</Link></li>
-                        <li><Link href={'/unproduced'}>市政情報</Link></li>
+                        <li><Link href='/unproduced'>暮らし情報</Link></li>
+                        <li><Link href='/unproduced'>子育て・教育</Link></li>
+                        <li><Link href='/unproduced'>健康・福祉</Link></li>
+                        <li><Link href='/unproduced'>観光情報</Link></li>
+                        <li><Link href='/unproduced'>文化・歴史</Link></li>
+                        <li><Link href='/unproduced'>産業・農業</Link></li>
+                        <li><Link href='/unproduced'>市政情報</Link></li>
                     </ul>
                 </div>
             </div>
@@ -53,7 +53,7 @@ const header = () => {
 
                 <div className={styles.header_container}>
                     <Link href={'/'}>
-                        <Image className='reverse' src="/logo.svg" alt="Logo" width={250} height={80} />
+                        <Image className='reverse' src="/logo.svg" alt="Logo" width={250} height={80} priority />
                     </Link>
 
                     <div className={styles.site_setting}>
@@ -85,13 +85,13 @@ const header = () => {
                 </div>
 
                 <div className={styles.menu_wrap}>
-                    <span><Link href={'/unproduced'}>暮らし情報</Link></span>
-                    <span><Link href={'/unproduced'}>子育て・教育</Link></span>
-                    <span><Link href={'/unproduced'}>健康・福祉</Link></span>
-                    <span><Link href={'/unproduced'}>観光情報</Link></span>
-                    <span><Link href={'/unproduced'}>文化・歴史</Link></span>
-                    <span><Link href={'/unproduced'}>産業・農業</Link></span>
-                    <span><Link href={'/unproduced'}>市政情報</Link></span>
+                    <span><Link href='/unproduced'>暮らし情報</Link></span>
+                    <span><Link href='/unproduced'>子育て・教育</Link></span>
+                    <span><Link href='/unproduced'>健康・福祉</Link></span>
+                    <span><Link href='/unproduced'>観光情報</Link></span>
+                    <span><Link href='/unproduced'>文化・歴史</Link></span>
+                    <span><Link href='/unproduced'>産業・農業</Link></span>
+                    <span><Link href='/unproduced'>市政情報</Link></span>
                 </div>
             </header>
         </div>

@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Link from 'next/link';
 import styles from '../styles/components/footer.module.scss';
 
@@ -28,27 +28,27 @@ const footer = () => {
                     <div className={styles.detail_container}>
                         <ul>
                             <li className={styles.detail_list}>
-                                <Link href={'/unproduced'}>
+                                <Link href='/unproduced'>
                                     <span className={styles.detail_btn}>市役所へのアクセス</span>
                                 </Link>
                             </li>
                             <li className={styles.detail_list}>
-                                <Link href={'/unproduced'}>
+                                <Link href='/unproduced'>
                                     <span className={styles.detail_btn}>各課のご案内</span>
                                 </Link>
                             </li>
                             <li className={styles.detail_list}>
-                                <Link href={'/unproduced'}>
+                                <Link href='/unproduced'>
                                     <span className={styles.detail_btn}>フロアマップ</span>
                                 </Link>
                             </li>
                             <li className={styles.detail_list}>
-                                <Link href={'/unproduced'}>
+                                <Link href='/unproduced'>
                                     <span className={styles.detail_btn}>市へのご意見・お問い合わせ</span>
                                 </Link>
                             </li>
                             <li className={styles.detail_list}>
-                                <Link href={'/unproduced'}>
+                                <Link href='/unproduced'>
                                     <span className={styles.detail_btn}>サイトマップ</span>
                                 </Link>
                             </li>
