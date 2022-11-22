@@ -210,7 +210,7 @@ const Home = () => {
       <ul className={styles.banner_conteiner}>
         {banners.map((banner, index) => {
           return (
-            <li className={styles.banner}>
+            <li className={styles.banner} key={index}>
               <Link href={banner.link}>
                 <Image
                   src={banner.path}
