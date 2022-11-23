@@ -260,10 +260,11 @@
 }
 
 .banner_wrap {
-  margin: 40px 10px;
+  width: fit-content;
+  margin: 40px auto;
 
   @media (min-width: 700px) {
-    margin: 40px 50px;
+    margin: 40px auto;
   }
 
   @media (min-width: 1400px) {
@@ -271,7 +272,6 @@
   }
 
   h2 {
-    margin-left: 20px;
     margin-bottom: 15px;
     font-size: 1.3rem;
     position: relative;
@@ -290,6 +290,7 @@
 
   .banner_conteiner {
     height: 200px;
+    width: fit-content;
     max-width: 1300px;
     text-align: center;
     display: grid;
