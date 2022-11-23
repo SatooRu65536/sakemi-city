@@ -6,26 +6,30 @@ import Layout from '../components/Layout';
 import styles from '../styles/Home.module.scss';
 import SwiperCore, { Pagination, Navigation, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import HomeIcon from '@mui/icons-material/Home';
-import Pregnantwoman from '@mui/icons-material/PregnantWoman';
-import School from '@mui/icons-material/School';
-import Delete from '@mui/icons-material/Delete';
-import Payments from '@mui/icons-material/Payments';
-import Wheelchairpickup from '@mui/icons-material/WheelchairPickup';
-import Flood from '@mui/icons-material/Flood';
-import Work from '@mui/icons-material/Work';
-import Group from '@mui/icons-material/Group';
-import Localhospital from '@mui/icons-material/LocalHospital';
-import Directionsboat from '@mui/icons-material/DirectionsBoat';
 import Person from '@mui/icons-material/Person';
 import { topBanners, banners, news } from '../components/site-info';
 import _ from 'lodash';
+
+import HomeIcon from '@mui/icons-material/Home';
+import PregnantWomanIcon from '@mui/icons-material/PregnantWoman';
+import SchoolIcon from '@mui/icons-material/School';
+import DeleteIcon from '@mui/icons-material/Delete';
+import PaymentsIcon from '@mui/icons-material/Payments';
+import WheelchairPickupIcon from '@mui/icons-material/WheelchairPickup';
+import FloodIcon from '@mui/icons-material/Flood';
+import WorkIcon from '@mui/icons-material/Work';
+import GroupIcon from '@mui/icons-material/Group';
+import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
+import DirectionsBoatIcon from '@mui/icons-material/DirectionsBoat';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import AccountBoxIcon from '@mui/icons-material/AccountBox';
+import GroupsIcon from '@mui/icons-material/Groups';
 
 
 SwiperCore.use([Pagination, Navigation, Autoplay]);
 
 
-const Home = () => {
+const TopPage = () => {
   const [selectTab, setSelectTab] = useState(0);
 
   const Topbanner = () => {
@@ -73,56 +77,56 @@ const Home = () => {
 
         <Link href='/unproduced'>
           <div className={styles.life_box}>
-            <Pregnantwoman className={styles.life_icon} />
+            <PregnantWomanIcon className={styles.life_icon} />
             <span>妊娠・出産</span>
           </div>
         </Link>
 
         <Link href='/unproduced'>
           <div className={styles.life_box}>
-            <School className={styles.life_icon} />
+            <SchoolIcon className={styles.life_icon} />
             <span>子育て・教育</span>
           </div>
         </Link>
 
         <Link href='/unproduced'>
           <div className={styles.life_box}>
-            <Delete className={styles.life_icon} />
+            <DeleteIcon className={styles.life_icon} />
             <span>資源・ごみ</span>
           </div>
         </Link>
 
         <Link href='/unproduced'>
           <div className={styles.life_box}>
-            <Payments className={styles.life_icon} />
+            <PaymentsIcon className={styles.life_icon} />
             <span>税金・保険料</span>
           </div>
         </Link>
 
         <Link href='/unproduced'>
           <div className={styles.life_box}>
-            <Wheelchairpickup className={styles.life_icon} />
+            <WheelchairPickupIcon className={styles.life_icon} />
             <span>介護・福祉</span>
           </div>
         </Link>
 
         <Link href='/unproduced'>
           <div className={styles.life_box}>
-            <Flood className={styles.life_icon} />
+            <FloodIcon className={styles.life_icon} />
             <span>防災・防犯</span>
           </div>
         </Link>
 
         <Link href='/unproduced'>
           <div className={styles.life_box}>
-            <Work className={styles.life_icon} />
+            <WorkIcon className={styles.life_icon} />
             <span>就労</span>
           </div>
         </Link>
 
         <Link href='/unproduced'>
           <div className={styles.life_box}>
-            <Group className={styles.life_icon} />
+            <GroupIcon className={styles.life_icon} />
             <span>結婚・離婚</span>
           </div>
         </Link>
@@ -136,14 +140,14 @@ const Home = () => {
 
         <Link href='/unproduced'>
           <div className={styles.life_box}>
-            <Localhospital className={styles.life_icon} />
+            <LocalHospitalIcon className={styles.life_icon} />
             <span>医療・保健</span>
           </div>
         </Link>
 
         <Link href='/unproduced'>
           <div className={styles.life_box}>
-            <Directionsboat className={styles.life_icon} />
+            <DirectionsBoatIcon className={styles.life_icon} />
             <span>渡船・交通</span>
           </div>
         </Link>
@@ -205,24 +209,113 @@ const Home = () => {
     )
   }
 
+  const Linklist = () => {
+    return (
+      <div className={styles.link_area}>
+        <div className={styles.politics_container}>
+          <Link className={styles.box} href='/unproduced'>
+            市長の部屋
+            <AccountBoxIcon className={styles.icon} />
+          </Link>
+
+          <Link className={styles.box} href='/unproduced'>
+            市議会
+            <GroupsIcon className={styles.icon} />
+          </Link>
+        </div>
+
+        <div className={styles.link_container}>
+          <Link className={styles.box} href='/unproduced'>
+            住民票
+            <KeyboardArrowRightIcon className={styles.arrow} />
+          </Link>
+
+          <Link className={styles.box} href='/unproduced'>
+            戸籍謄本
+            <KeyboardArrowRightIcon className={styles.arrow} />
+          </Link>
+
+          <Link className={styles.box} href='/unproduced'>
+            ごみ分別
+            <KeyboardArrowRightIcon className={styles.arrow} />
+          </Link>
+
+          <Link className={styles.box} href='/unproduced'>
+            所得控除
+            <KeyboardArrowRightIcon className={styles.arrow} />
+          </Link>
+
+          <Link className={styles.box} href='/unproduced'>
+            救急医療
+            <KeyboardArrowRightIcon className={styles.arrow} />
+          </Link>
+        </div>
+
+        <div className={styles.link_container}>
+          <Link className={styles.box} href='/unproduced'>
+            酒海市内マップ
+            <KeyboardArrowRightIcon className={styles.arrow} />
+          </Link>
+
+          <Link className={styles.box} href='/unproduced'>
+            公共施設紹介
+            <KeyboardArrowRightIcon className={styles.arrow} />
+          </Link>
+
+          <Link className={styles.box} href='/unproduced'>
+            公共施設予約
+            <KeyboardArrowRightIcon className={styles.arrow} />
+          </Link>
+        </div>
+
+        <div className={styles.link_container}>
+          <Link className={styles.box} href='/unproduced'>
+            ふるさと納税
+            <KeyboardArrowRightIcon className={styles.arrow} />
+          </Link>
+
+          <Link className={styles.box} href='/unproduced'>
+            寄付
+            <KeyboardArrowRightIcon className={styles.arrow} />
+          </Link>
+        </div>
+
+        <div className={styles.link_container}>
+          <Link className={styles.box} href='/unproduced'>
+            広告募集
+            <KeyboardArrowRightIcon className={styles.arrow} />
+          </Link>
+
+          <Link className={styles.box} href='/unproduced'>
+            入札情報
+            <KeyboardArrowRightIcon className={styles.arrow} />
+          </Link>
+        </div>
+      </div>
+    )
+  }
+
   const Banner = () => {
     return (
-      <ul className={styles.banner_conteiner}>
-        {banners.map((banner, index) => {
-          return (
-            <li className={styles.banner} key={index}>
-              <Link href={banner.link}>
-                <Image
-                  src={banner.path}
-                  alt='banner'
-                  width={300}
-                  height={90}
-                />
-              </Link>
-            </li>
-          )
-        })}
-      </ ul>
+      <div className={styles.banner_wrap}>
+        <h2>バナー広告</h2>
+        <ul className={styles.banner_conteiner}>
+          {banners.map((banner, index) => {
+            return (
+              <li className={styles.banner} key={index}>
+                <Link href={banner.link}>
+                  <Image
+                    src={banner.path}
+                    alt='banner'
+                    width={300}
+                    height={90}
+                  />
+                </Link>
+              </li>
+            )
+          })}
+        </ ul>
+      </div>
     )
   }
 
@@ -240,6 +333,8 @@ const Home = () => {
 
         <News />
 
+        <Linklist />
+
         <Banner />
       </main>
     </Layout>
@@ -247,4 +342,4 @@ const Home = () => {
 }
 
 
-export default Home;
+export default TopPage;
