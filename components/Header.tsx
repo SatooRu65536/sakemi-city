@@ -88,7 +88,7 @@ const header = () => {
                     <span><Link href='/unproduced'>暮らし情報</Link></span>
                     <span><Link href='/unproduced'>子育て・教育</Link></span>
                     <span><Link href='/unproduced'>健康・福祉</Link></span>
-                    <span><Link href='/unproduced'>観光情報</Link></span>
+                    <span><Link href='/site/sightseeing'>観光情報</Link></span>
                     <span><Link href='/unproduced'>文化・歴史</Link></span>
                     <span><Link href='/unproduced'>産業・農業</Link></span>
                     <span><Link href='/unproduced'>市政情報</Link></span>
